@@ -4,10 +4,14 @@ git add
 
 echo "Add: "
 
+read $varname
+
 git commit -m 
 
 echo "Commit: "
 
-git push origin master
+read $varname
+
+git push -f origin master
 
 echo "Branch: "
