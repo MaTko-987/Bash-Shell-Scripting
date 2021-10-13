@@ -2,7 +2,7 @@
 
 num=4
 
-if [ $num -gt 5 ] && [ $num -lt 10 ]
+if [ $num -gt 5 ] && [ $num -lt 10 ] 
 then
     echo "Number is whitin our range"
 
