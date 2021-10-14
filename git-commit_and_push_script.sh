@@ -2,6 +2,9 @@
 
 echo 'Add file: '
 read file
+
+#if [ file=="."] || [ file==""]
+#then
 git add $file
 
 echo 'Commit: '
@@ -14,5 +17,3 @@ git push -f origin $branch
 
 
 read
-
-
