@@ -6,7 +6,7 @@ git add $file
 
 echo 'Commit: '
 read commit-message
-git commit -m $commit-message
+git commit -m '$commit-message'
 
 echo "Branch: "
 read branch
