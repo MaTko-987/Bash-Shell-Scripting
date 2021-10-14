@@ -1,15 +1,17 @@
 #!/bin/bash
 
 echo 'Add file: '
-read $file
-git add '$file'
+read file
+git add $file
 
 echo 'Commit: '
-read $commit-message
+read commit-message
 git commit -m '$commit-message'
 
 echo "Branch: "
-read $branch
+read branch
 git push -f origin $branch
+
+read
 
 
