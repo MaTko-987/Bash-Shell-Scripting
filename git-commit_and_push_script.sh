@@ -5,10 +5,10 @@ read file
 git add $file
 
 echo 'Commit: '
-read commit-message
-git commit -m "$commit-message"
+read commit_Message
+git commit -m "$commit_Message"
 
-echo "Branch: "
+echo 'Branch: '
 read branch
 git push -f origin $branch
 
