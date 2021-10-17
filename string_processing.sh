@@ -13,7 +13,7 @@ newstr=$str1$str2
 echo "Concatenated string is '$'newstr"
 
 #compare string
-if [ $str1=$str2 ]
+if [ $str1==$str2 ]
 then 
     echo "Match"
 
