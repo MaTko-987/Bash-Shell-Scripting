@@ -1,6 +1,8 @@
 #!/bin/bash
 
-until [ $i -le 10]
+i=0
+
+until [ $i -le 10 ]
 do
   echo $i 
 
