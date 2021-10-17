@@ -2,7 +2,7 @@
 
 git status
 
-echo '==============Add file: ================='
+echo '==============Add file: ==============='
 read file
 
 #if [ file=="."] || [ file==""]
