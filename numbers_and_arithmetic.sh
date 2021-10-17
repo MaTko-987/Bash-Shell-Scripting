@@ -21,7 +21,7 @@ echo $(expr $num1 + $num2)
 
 echo $(expr $num1 / $num2)
 
-echo $(expr $num1 * $num2)
+echo $(expr $num1 \* $num2) # "\" sign needed before "*" otherwise it throws an error
 
 echo $(expr $num1 - $num2)
 
