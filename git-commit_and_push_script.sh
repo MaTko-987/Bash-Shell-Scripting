@@ -18,5 +18,4 @@ echo '==============Branch: ================='
 read branch
 git push -f origin $branch
 
-
 read
