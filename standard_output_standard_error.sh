@@ -6,4 +6,4 @@ ls -l
 
 #stderr
 
-lsl -lsl
+lsl -l
