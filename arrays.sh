@@ -14,3 +14,5 @@ echo "${!myarr[@]}"
 unset myarr[2]
 
 echo "${myarr[@]}"
+
+myarr[2]="newcar"
