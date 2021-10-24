@@ -15,3 +15,17 @@ else
 fi
 
 
+#check if file exists
+
+echo "Enter file"
+read fname
+
+if [ -d $fname ]
+then
+  echo "File exist."
+
+else
+  echo "File doesn't exist."
+
+fi
+
