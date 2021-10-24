@@ -32,3 +32,11 @@ function my_func3() {
 }
 
 my_func3 "abc" "123" "efg" "456"
+
+#function with return statement
+
+function sum() {
+    sum=$(expr $1 + $2)
+    echo $sum
+}
+
