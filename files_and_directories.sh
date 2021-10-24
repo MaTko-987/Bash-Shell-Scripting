@@ -53,6 +53,15 @@ else
   echo "File not found!"
 fi
 
+# delete a file
+
+if [ -f $fname ]
+then
+  rm $fname
+else
+  echo "File not found!"
+fi
+
 
 
 
