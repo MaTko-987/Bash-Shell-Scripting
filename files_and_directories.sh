@@ -16,7 +16,6 @@ fi
 
 
 #check if file exists
-
 echo "Enter file"
 read fname
 
@@ -30,8 +29,6 @@ else
 fi
 
 #add data to a file
-
-
 if [ -f $fname ]
 then
   echo "Enter some text"
@@ -42,4 +39,20 @@ else
   echo "File not found."
 
 fi
+
+#read a file line by line
+
+read fname
+if [ -f $fname ]
+then
+  while IFS=read -r line
+  do 
+    echo $line 
+  done < $fname
+else
+  echo "File not found!"
+fi
+
+
+
 
