@@ -40,3 +40,6 @@ function sum() {
     echo $sum
 }
 
+addition=$(sum 1 2)
+echo "Addition is : $addition"
+
