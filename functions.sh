@@ -12,3 +12,10 @@ function my_func1(){
 
 my_func1
 
+#function with an argument
+
+function my_func2(){
+
+    echo $1
+
+}
