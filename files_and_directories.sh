@@ -20,12 +20,26 @@ fi
 echo "Enter file"
 read fname
 
-if [ -d $fname ]
+if [ -f $fname ]
 then
   echo "File exist."
 
 else
   echo "File doesn't exist."
+
+fi
+
+#add data to a file
+
+
+if [ -f $fname ]
+then
+  echo "Enter some text"
+  read filetext
+  echo $filetext >> $fname
+
+else
+  echo "File not found."
 
 fi
 
