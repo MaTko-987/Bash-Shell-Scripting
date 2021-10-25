@@ -1,7 +1,5 @@
-:
-'Awk is a scripting language used for manipulating data and generating reports. 
-The awk command programming language requires no compiling and allows the user to use variables, 
-numeric functions, string functions, and logical operators.'
+#Awk is a scripting language used for manipulating data and generating reports. 
+#The awk command programming language requires no compiling and allows the user to use variables, numeric functions, string functions, and logical operators.'
 
 
 #using awk in a script
@@ -14,4 +12,12 @@ then
     awk '{print}' $fname
 
     #Print specific lines
+    awk '/root/ {print}' $fname
     
+    #Print specific columns in the file
+    awk '/testuser/ {print$3}' $fname
+
+else
+    echo "$fname does not exits"
+
+fi
