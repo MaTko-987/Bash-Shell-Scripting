@@ -16,7 +16,6 @@ then
     
     #Print specific columns in the file
     awk '/testuser/ {print$3}' $fname
-
 else
     echo "$fname does not exits"
 
