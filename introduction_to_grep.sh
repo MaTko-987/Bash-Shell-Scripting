@@ -24,3 +24,9 @@ grep -i $pattern $logfile
 #printing a line after matched pattern
 grep -A1 $pattern $logfile
 
+#printing a line before matched pattern
+grep -A1 $pattern $logfile
+
+#before and after
+grep -A1 -B1 $pattern $logfile
+
