@@ -18,4 +18,6 @@ fi
 grep -v $pattern $logfile
 
 
+#printing a line ignoring case in a pattern
+grep -i $pattern $logfile
 
