@@ -21,3 +21,6 @@ grep -v $pattern $logfile
 #printing a line ignoring case in a pattern
 grep -i $pattern $logfile
 
+#printing a line after matched pattern
+grep -A1 $pattern $logfile
+
