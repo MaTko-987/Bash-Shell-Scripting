@@ -7,4 +7,7 @@ fname=testfile
 sed "s/root/groot/" $fname
 
 # Replace all matching occurence with another word
-sed
+sed "s/root/groot/g" $fname
+
+# Replace the changes directly in the file
+sed -i "s/root/groot/g" $fname
