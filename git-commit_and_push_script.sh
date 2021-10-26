@@ -2,7 +2,7 @@
 
 git status
 
-echo '==============Add file/s: ==============='
+echo '============== Add file/s: ==============='
 read file
 
 #if [ file=="."] || [ file==""]
@@ -10,11 +10,11 @@ read file
 
 git add $file
 
-echo '==============Commit/s: ================='
+echo '============== Commit: ================='
 read commit_Message
 git commit -m "$commit_Message"
 
-echo '==============Branch/es : ================='
+echo '============== Branch: ================='
 read branch
 git push -f origin $branch
 
