@@ -2,7 +2,7 @@
 
 source ./utils.sh
 
-LOGFILE=app.log.log
+LOGFILE=app.log
 
 mylog "Testing modularising scripts"
 
