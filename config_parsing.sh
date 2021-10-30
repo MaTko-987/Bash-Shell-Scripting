@@ -2,17 +2,17 @@
 
 MYCONFIG='my_config.cfg'
 
-funciton parse_config() {
+function parse_config() {
     CONFIG=$1
     echo "Reading config file $CONFIG"
     cat $CONFIG | cut -d"=" -s -f1,2 > /tmp/temp.cfg
     source /tmp/temp.cfg
-
 }
 
-parse_cofig MYCONFIG   
+parse_config $MYCONFIG   
 
 echo "Executing my application ...."
 echo "User : $user"
 echo "Application : $app"
-echo "Home directory : "
+echo "Home directory : $location"
+echo "Host : $host"
